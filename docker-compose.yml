@@ -19,25 +19,7 @@ services:
     ports:
       - "6379:6379"
     volumes:
-      - redis_data:/data  
-  app:
-    build: ./app
-    container_name: rick-and-morty
-    environment:      
-      - DB_HOST=localhost
-      - DB_PORT=5432
-      - DB_USER=rick
-      - DB_PASSWORD=morty
-      - DB_NAME=rick-and-morty
-      - NODE_ENV=development
-    ports:
-      - "3000:3000"
-    depends_on:
-      - postgres
-      - redis
-    volumes:
-      - ./app:/usr/src/app
-      - /usr/src/app/node_modules
+      - redis_data:/data
 
 volumes:
   postgres_data:

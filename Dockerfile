@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:14
+FROM node:20
 
 # Create and change to the app directory
 WORKDIR /usr/src/app
@@ -16,7 +16,5 @@ COPY . .
 # Expose the port your app runs on
 EXPOSE 3000
 
-RUN npx sequelize-cli db:migrate
-
 # Command to run the application
-CMD ["npm", "start"]
+CMD ["npm","start"]
