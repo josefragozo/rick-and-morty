@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "rick",
+    "password": "morty",
+    "database": "rick-and-morty",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "rick",
+    "password": "morty",
+    "database": "rick-and-morty",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "rick",
+    "password": "morty",
+    "database": "rick-and-morty",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
